@@ -6,3 +6,4 @@ index.json
 yarn.lock
 cypress/screenshots
 cypress/videos
+.idea
