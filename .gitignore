@@ -4,3 +4,5 @@ node_modules
 results
 index.json
 yarn.lock
+cypress/screenshots
+cypress/videos
