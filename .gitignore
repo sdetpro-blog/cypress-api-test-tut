@@ -1,0 +1,6 @@
+.vscode
+mochawesome-report
+node_modules
+results
+index.json
+yarn.lock
