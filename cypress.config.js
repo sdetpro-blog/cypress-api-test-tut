@@ -5,6 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    specPattern: 'cypress/api-test/**.{js,jsx,ts,tsx}'
+    specPattern: 'cypress/api-test/**.{js,jsx,ts,tsx}',
+    projectId: "cypress-api",
   }
 });

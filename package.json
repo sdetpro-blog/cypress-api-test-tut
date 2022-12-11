@@ -8,7 +8,9 @@
     "test:mocha-reporter": "yarn test --reporter mochawesome --reporter-options reportDir=\"results\",overwrite=false,html=false,json=true",
     "merge-report": "mochawesome-merge \"results/*.json\" > index.json",
     "build-report": "marge index.json",
-    "open-report": "yarn merge-report && yarn build-report && serve mochawesome-report"
+    "open-report": "yarn merge-report && yarn build-report && serve mochawesome-report",
+    "test:cy2": "cy2 run --reporter mochawesome --reporter-options reportDir=\"results\",overwrite=false,html=false,json=true",
+    "test:parallel": "CYPRESS_API_URL=http://localhost:1234 && yarn test:cy2 --parallel --record --key somekey"
   },
   "license": "MIT",
   "devDependencies": {
