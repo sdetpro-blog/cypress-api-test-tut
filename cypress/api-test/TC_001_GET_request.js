@@ -4,7 +4,7 @@ describe('Test GET request', () => {
             url: 'https://jsonplaceholder.typicode.com/posts',
             method: 'GET'
         }).then(response => {
-           expect(response.status).to.eq(200)
+           expect(response.status).to.eq(400)
            expect(response.body.length).to.eq(100)
         })
     })
